@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" >
+  <title>SafeNet Academy |  About Us</title>
+  <link rel="stylesheet" href="styles.css" >
+</head>
+
+<body>
+
+<header>
+<div class="container header-inner">
+
+  <a class="brand" href="index.html">
+      <img class="logo" src="image/logo.JPG" alt="SafeNet Academy Logo" >
+      <span class="brand-name">SafeNet Academy</span>
+  </a>
+
+<nav class="nav">
+<a class="nav-link" href="index.html">Home</a>
+
+<a class="nav-link" href="StudentDashboard.html">Student Dashboard</a>
+
+   <a class="nav-link" href="course-content.html">Course Content</a>
+   <a class="nav-link active" href="about.html">About us</a>
+   <a class="nav-link" href="contact.html">Contact us</a>
+   <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+
+</nav>
+</div>
+</header>
+
+<div class="breadcrumb-bar">
+  <div class="container breadcrumbs">
+        <a href="index.html">Home</a> <span>›</span> <span>About us</span>
+  </div>
+</div>
+
+<main>
+    <div class="container">
+      <section class="about-hero">
+        <h1>About Us</h1>
+        <p>
+          SafeNet Academy is dedicated to helping students learn cybersecurity fundamentals
+          through structured lessons, practical examples, and interactive quizzes.
+        </p>
+      </section>
+
+      <hr class="section-line" />
+	  
+	 
+      <div class="about-controls">
+        <label for="sortTeachers" class="sort-label">Sort by ...</label>
+
+        <select id="sortTeachers" class="sort-select">
+		<option value="default">Default</option>
+          <optgroup label="Name">
+            <option value="name-asc">Name (A to Z)</option>
+            <option value="name-desc">Name (Z to A)</option>
+          </optgroup>
+
+          <optgroup label="Experience">
+            <option value="exp-desc">Experience (High to Low)</option>
+            <option value="exp-asc">Experience (Low to High)</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <section class="teachers-scroll-box" id="teachersList">
+
+        <!-- Teacher1 -->
+        <article class="teacher-card">
+		<div class="teacher-head">
+          <img class="teacher-img" src="image/boy.jpg" alt="Teacher photo" />
+          <div class="teacher-info">
+            
+              <h2 class="teacher-name">Teacher's name : Eng. <span class="name">Ahmed</span></h2>
+              <p class="teacher-exp">Year of experience : <span class="exp">8</span></p>
+            </div>
+			 </div>
+            <p class="teacher-desc">
+              Specialist in network security and cyber awareness training. Focuses on teaching safe browsing,
+              password hygiene, and phishing prevention with practical examples.
+            </p>
+         
+        </article>
+		  <!-- Teacher Card 2 -->
+        <article class="teacher-card">
+		<div class="teacher-head">
+          <img class="teacher-img" src="image/girl.jpg" alt="Teacher photo" />
+          <div class="teacher-info">
+            
+              <h2 class="teacher-name">Teacher's name : Ms. <span class="name">Reem</span></h2>
+              <p class="teacher-exp">Year of experience : <span class="exp">5</span></p>
+            </div>
+			</div>
+            <p class="teacher-desc">
+              Cybersecurity educator passionate about beginner-friendly explanations. Covers malware types,
+              secure email practices, and basic incident response steps.
+            </p>
+          
+        </article>
+
+        <!-- Teacher Card 3 -->
+        <article class="teacher-card">
+		<div class="teacher-head">
+          <img class="teacher-img" src="image/girl.jpg" alt="Teacher photo" />
+          <div class="teacher-info">
+            
+              <h2 class="teacher-name">Teacher's name : Dr. <span class="name">Sara</span></h2>
+              <p class="teacher-exp">Year of experience : <span class="exp">9</span></p>
+            </div>
+			</div>
+            <p class="teacher-desc">
+				Research-oriented instructor with experience in cyber safety and digital privacy. Teaches data
+              protection, authentication basics, and security best practices.
+            </p>
+          
+        </article>
+		
+		<!-- Teacher4 -->
+        <article class="teacher-card">
+		<div class="teacher-head">
+          <img class="teacher-img" src="image/boy.jpg" alt="Teacher photo" />
+          <div class="teacher-info">
+            
+              <h2 class="teacher-name">Teacher's name :  Eng. <span class="name">Khalid</span></h2>
+              <p class="teacher-exp">Year of experience : <span class="exp">6</span></p>
+            </div>
+			 </div>
+            <p class="teacher-desc">
+				Research-oriented instructor with experience in cyber safety and digital privacy. Teaches data
+              protection, authentication basics, and security best practices.
+            </p>
+         
+        </article>
+
+      </section>
+	  </div> <!--container-->
+</main>
+<footer> 
+ <div class="footer-container">
+ 
+  <div class="footer-left">
+      <img src="image/logo.JPG" class="footer-logo" alt="SafeNet Academy Logo">
+      <span class="footer-name">SafeNet Academy</span>
+    </div>
+ <div class="footer-middle">
+ <p id="clock"></p>
+      <p>
+        SafeNet Academy helps students learn cybersecurity basics
+        through structured lessons and interactive quizzes.
+      </p>
+    </div>
+    <ul class="footer-right">
+  
+ <li><span class="icon"><img src="image/phone.png"  alt="phone icon" height="20px" width="20px"></span> 123456789</li>
+<li><span class="icon"><img src="image/loc.png"  alt="location icon" height="26px" width="23px"></span> Riyadh, 2026</li>
+<li><span class="icon"><img src="image/mail.png"  alt="mail icon" height="23px" width="23px"></span> <a id="mail" href="mailto:safenet@gmail.com" >safenet@gmail.com</a></li>
+  
+    
+    </ul>
+
+</div>
+
+  <div class="footer-bottom">
+    &copy; 2026 SafeNet Academy. All rights reserved
+  </div>
+  
+</footer>
+<script src="script.js"></script>
+<script src="about.js"></script>
+</body>
+</html>
