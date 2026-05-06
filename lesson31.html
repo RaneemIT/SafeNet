@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson 3 - Types of Malware Part 1</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="lesson31.js"></script>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="image/logo.jpg" alt="SafeNet Academy Logo" class="logo">
+      <span class="brand-name">SafeNet Academy</span>
+    </a>
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="StudentDashboard.html">Student Dashboard</a>
+		  <a class="nav-link active" href="course-content.html">Course Content</a>
+   <a class="nav-link" href="about.html">About us</a>
+   <a class="nav-link" href="contact.html">Contact us</a>
+   <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb-bar">
+  <div class="container breadcrumbs">
+    <a href="index.html">Home</a>
+	<span>›</span>
+	<a href="course-content.html">Course Content</a>
+	<span>›</span>
+	<span>Lesson 3.1</span>
+  </div>
+</div>
+
+<main class="lesson-page">
+  <div class="container">
+    <section class="lesson-hero">
+      <div class="lesson-hero-icon">
+        <img src="image/security.jpg" alt="Malware icon">
+      </div>
+      <div class="lesson-hero-text">
+        <h1>Lesson 3</h1>
+        <p>Types of Malware – Part 1</p>
+      </div>
+    </section>
+
+    <section class="lesson-block lesson-grid">
+      <div class="lesson-text">
+        <h2>What is Malware?</h2>
+        <p>
+          Malware is harmful software created to damage devices, steal data, spy on
+          users, or disrupt normal computer operations. It can enter systems through
+          unsafe downloads, infected email attachments, fake websites, or vulnerable software.
+        </p>
+        <p>
+          Understanding malware is essential because it is one of the most common cyber
+          threats. Different types of malware behave in different ways, but all of them
+          can cause serious harm if not detected early.
+        </p>
+      </div>
+      <div class="lesson-image-large">
+        <img src="image/lesson34.jpg" alt="Types of Malware Part 1">
+      </div>
+    </section>
+
+    <section class="lesson-two-col">
+      <div class="lesson-card-box">
+        <h2>Main Types of Malware</h2>
+        <p>
+          Malware comes in several forms, and each type is designed for a different
+          purpose such as spreading quickly, damaging files, or stealing information.
+        </p>
+
+        <h3>Basic Malware Categories:</h3>
+
+        <ul class="nested-top">
+          <li>
+            <strong>Viruses</strong>
+            <ul>
+              <li>Attach to files or programs</li>
+              <li>Spread when the infected file is opened</li>
+              <li>May corrupt or delete data</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Worms</strong>
+            <ul>
+              <li>Spread across networks automatically</li>
+              <li>Do not need user action</li>
+              <li>Can overload systems quickly</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Trojans</strong>
+            <ul>
+              <li>Appear as legitimate software</li>
+              <li>Trick users into installing them</li>
+              <li>Can open a backdoor for attackers</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="lesson-card-box">
+        <h2>Malware Comparison</h2>
+        <div class="table-wrap">
+          <table class="cyber-table">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Potential Impact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Virus</td>
+                <td>Malware attached to a host file or program.</td>
+                <td>File damage and data corruption</td>
+              </tr>
+              <tr><td>Worm</td>
+                <td>Self-replicating malware that spreads through networks.</td>
+                <td>Network congestion and rapid spread</td>
+              </tr>
+              <tr>
+                <td>Trojan</td>
+                <td>Malicious program disguised as useful software.</td>
+                <td>Unauthorized access and data theft</td>
+              </tr>
+              <tr>
+                <td>Payload</td>
+                <td>The harmful action delivered after infection.</td>
+                <td>System damage or spying</td>
+              </tr>
+              <tr>
+                <td>Backdoor</td>
+                <td>A hidden entry point attackers use after infection.</td>
+                <td>Long-term compromise</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div class="lesson-actions">
+      <a href="lesson32.html" class="btn-next">Next</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="image/logo.jpg" alt="SafeNet Academy Logo" class="footer-logo">
+      <div class="footer-name">SafeNet Academy</div>
+    </div>
+	
+    <div class="footer-middle">
+      <p id="clock"></p>
+	  <p>
+        SafeNet Academy helps students learn cybersecurity basics through structured lessons and interactive quizzes.
+      </p>
+	</div> 
+	
+    <div class="footer-right">
+      <ul>
+        <li><span class="icon"><img src="image/phone.png"  alt="phone icon" height="20px" width="20px"></span> 123456789</li>
+<li><span class="icon"><img src="image/loc.png"  alt="location icon" height="26px" width="23px"></span> Riyadh, 2026</li>
+<li><span class="icon"><img src="image/mail.png"  alt="mail icon" height="23px" width="23px"></span> <a id="mail" href="mailto:safenet@gmail.com" >safenet@gmail.com</a></li>
+  </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 SafeNet Academy. All rights reserved</div>
+</footer>
+</body>
+<script src="script.js"></script>
+<script src="lessonFirstPage.js"></script>
+</html>

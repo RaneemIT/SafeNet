@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title>SafeNet Academy | Student Dashboard | Teacher Evaluation</title>
+	<link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+<header>
+<div class="container header-inner">
+
+  <a class="brand" href="index.html">
+      <img class="logo" src="image/logo.JPG" alt="SafeNet Academy Logo" >
+      <span class="brand-name">SafeNet Academy</span>
+  </a>
+
+<nav class="nav">
+<a class="nav-link" href="index.html">Home</a>
+
+   <a class="nav-link active" href="StudentDashboard.html">Student Dashboard</a>
+   <a class="nav-link" href="course-content.html">Course Content</a>
+   <a class="nav-link" href="about.html">About us</a>
+   <a class="nav-link" href="contact.html">Contact us</a>
+   <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+</div>
+</header>
+
+<div class="breadcrumb-bar">
+  <div class="container breadcrumbs">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <a href="StudentDashboard.html">Student Dashboard</a>
+	<span>›</span>
+	<span>Teacher Evaluation</span>
+  </div>
+</div>
+
+<main>
+<div class="container">
+<h1>Teacher Evaluation</h1> 
+<p class="herotext">Select a teacher to evaluate, choose a rating, and leave your feedback. Your responses help us improve!</p>
+<hr class="section-line">
+<div class="form-container">
+<form id="evalForm" action="#" method="post">
+<fieldset>
+<legend>Select Teacher to Evaluate</legend>
+<select name="Teachername" id="teacherSelect" class="Eval" >
+<option value="" disabled selected>-</option>
+<option>Eng.Ahmed</option>
+<option>Ms.Reem</option>
+<option>Dr.Sara</option>
+<option>Eng.Khalid</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>Rating:</legend>
+<br>
+<div class="rating-option" >
+   <div class="rating-item">
+   <input type="radio" id="excellent" name="rating" value="excellent">
+   <label for="excellent">Excellent</label>
+   </div>
+   <div class="rating-item">
+   <input type="radio" id="good" name="rating" value="good">
+   <label for="good">Good</label>
+   </div>
+   <div class="rating-item">
+   <input type="radio" id="fair" name="rating" value="fair">
+   <label for="fair">Fair</label>
+   </div>
+   <div class="rating-item">
+   <input type="radio" id="poor" name="rating" value="poor">
+   <label for="poor">Poor</label>
+   </div>
+   <div class="rating-item">
+   <input type="radio" id="verypoor" name="rating" value="verypoor">
+   <label for="verypoor">Very Poor</label>
+   </div>
+</div>
+<label class="feedback-label">Feedback </label>
+ <textarea name="comments" id="feedbackText" rows="4" placeholder="Write your Feedback here..."></textarea>
+</fieldset>
+<div class="button-container">
+
+                    <input type="submit" value="Submit">
+                </div>
+</form>				
+</div>
+</div>
+</main>
+<footer> 
+ <div class="footer-container">
+ 
+  <div class="footer-left">
+      <img src="image/logo.JPG" class="footer-logo" alt="SafeNet Academy Logo">
+      <span class="footer-name">SafeNet Academy</span>
+    </div>
+ <div class="footer-middle">
+      <p id="clock"></p>
+      <p>
+        SafeNet Academy helps students learn cybersecurity basics
+        through structured lessons and interactive quizzes.
+      </p>
+    </div>
+	
+  <ul class="footer-right">
+  
+<li><span class="icon"><img src="image/phone.png"  alt="phone icon" height="20" width="20"></span> 123456789</li>
+<li><span class="icon"><img src="image/loc.png"  alt="location icon" height="26" width="23"></span> Riyadh, 2026</li>
+<li><span class="icon"><img src="image/mail.png"  alt="mail icon" height="23" width="23"></span> <a id="mail" href="mailto:safenet@gmail.com" >safenet@gmail.com</a></li>
+  
+    
+    </ul>
+</div>
+
+  <div class="footer-bottom">
+    &copy; 2026 SafeNet Academy. All rights reserved
+  </div>
+  
+</footer>
+ <script src="script.js"></script>
+ <script src="TeacherEval.js"></script>
+</body>
+</html>

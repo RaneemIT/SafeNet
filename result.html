@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>SafeNet Academy | Result</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <div class="brand">
+            <img class="logo" src="image/logo.JPG" alt="SafeNet Academy Logo">
+            <span class="brand-name">SafeNet Academy</span>
+        </div>
+        <nav class="nav"> 
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="StudentDashboard.html">Student Dashboard</a>
+            <a class="nav-link active" href="course-content.html">Course Content</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="contact.html">Contact us</a>
+			<button id="themeToggle" class="theme-btn">🌙</button>
+        </nav>
+    </div>
+</header>
+
+<div class="breadcrumb-bar">
+    <div class="container breadcrumbs">
+        <a href="index.html">Home</a> <span>›</span> 
+        <a href="course-content.html">Course Content</a> <span>›</span>
+        <span id="dynamic-path"></span> <span>›</span>
+        <span>Result</span>
+    </div>
+</div>
+
+<main>
+<div class="quiz-header-section">
+            <h1 id="toAdjest">Quiz Result</h1>
+            <hr class="section-line">
+        </div>
+   
+
+       <div class="result-display-card">
+    <div class="score-item-box">
+        <span class="label-text">Your Current Score:</span>
+        <span id="displayCurrentScore" class="result-number">0 / 2</span>
+    </div>
+
+    <div class="score-item-box">
+        <span class="label-text">Best Score Achieved:</span>
+        <span id="displayBestScore" class="result-number">0 / 2</span>
+    </div>
+
+    <div id="motivation-text" class="motivational-tag">
+        Great job! keep learning
+    </div>
+</div>
+
+        <div class="result-actions-container">
+            <button class="btn-try-again" onclick="window.history.back();">Try again</button>
+            <a href="course-content.html" class="btn-submit-quiz">Back to Lesson</a>
+        </div>
+    </div>
+</main>
+
+<footer> 
+    <div class="footer-container">
+        <div class="footer-left">
+            <img src="image/logo.JPG" class="footer-logo" alt="SafeNet Academy Logo">
+            <span class="footer-name">SafeNet Academy</span>
+        </div>
+        <div class="footer-middle">
+		    <p id="clock"></p>
+            <p>SafeNet Academy helps students learn cybersecurity basics through structured lessons and interactive quizzes.</p>
+        </div>
+        <ul class="footer-right">
+            <li><span class="icon"><img src="image/phone.png" alt="phone" height="20" width="20"></span> 123456789</li>
+            <li><span class="icon"><img src="image/loc.png" alt="location" height="26" width="23"></span> Riyadh, 2026</li>
+            <li><span class="icon"><img src="image/mail.png" alt="mail" height="23" width="23"></span> <a id="mail" href="mailto:safenet@gmail.com">safenet@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 SafeNet Academy. All rights reserved
+    </div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+<script src="result-logic.js" ></script>
+</html>
