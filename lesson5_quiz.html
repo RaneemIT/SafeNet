@@ -3,6 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>SafeNet Academy | Lesson 5 Quiz</title>
+	<script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -11,7 +16,7 @@
 <header>
     <div class="container header-inner">
         <div class="brand">
-            <img class="logo" src="image/logo.JPG" alt="SafeNet Academy Logo">
+            <img class="logo" src="image/logo.jpg" alt="SafeNet Academy Logo">
             <span class="brand-name">SafeNet Academy</span>
         </div>
         <nav class="nav">
@@ -103,7 +108,7 @@
 <footer> 
     <div class="footer-container">
         <div class="footer-left">
-            <img src="image/logo.JPG" class="footer-logo" alt="SafeNet Academy Logo">
+            <img src="image/logo.jpg" class="footer-logo" alt="SafeNet Academy Logo">
             <span class="footer-name">SafeNet Academy</span>
         </div>
         <div class="footer-middle">
